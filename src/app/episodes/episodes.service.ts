@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
-import { threadId } from 'worker_threads';
 import { character } from '../characters/character/character.model';
 import { CharactersComponent } from '../characters/characters.component';
 import { episode } from './episode.model';
