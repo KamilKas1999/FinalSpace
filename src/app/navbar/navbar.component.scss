@@ -1,0 +1,48 @@
+#mySidenav a {
+  position: absolute;
+  left: -110px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 120px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#characters {
+  top: 20px;
+  background-color: #74435f;
+}
+
+#episodes {
+  top: 80px;
+  background-color: #683030;
+}
+
+#locations {
+  top: 140px;
+  background-color: #3c6230;
+}
+
+#quotes {
+  top: 200px;
+  background-color: rgb(48, 76, 87);
+}
+
+@media only screen and (max-width: 1200px) {
+  #mySidenav a {
+    position: static;
+    left: 0;
+    padding: 15px;
+
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0;
+  }
+}

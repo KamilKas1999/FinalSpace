@@ -1,0 +1,29 @@
+<div class="all" *ngIf="character">
+  <div class="row">
+    <div class="col-lg-12 col-xl-4 img">
+      <div class="imgInside">
+        <img src="{{ character.img_url }}" />
+      </div>
+     <div class="name">
+       <h1>{{ character.name }}</h1>
+      </div>
+      
+    </div>
+    <div class="col-lg-4 col-xl-3 info">
+      <h2>Info:</h2>
+      <p>Status : {{ character.status }}</p>
+      <p>Gender : {{ character.gender }}</p>
+      <p>Hair : {{ character.hair }}</p>
+      <p>Origin : {{ character.origin }}</p>
+      <p>Status : {{ character.status }}</p>
+    </div>
+    <div class="col-lg-4 col-xl-3 alias">
+      <h2>Alias:</h2>
+      <p *ngFor="let alias of character.alias">{{ alias }}</p>
+    </div>
+    <div class="col-lg-4 col-xl-2 abilities" >
+      <h2>Abilities:</h2>
+      <p *ngFor="let ability of character.abilities">{{ ability }}</p>
+    </div>
+  </div>
+</div>

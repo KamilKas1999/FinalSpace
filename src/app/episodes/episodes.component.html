@@ -1,0 +1,34 @@
+<!-- <app-episode *ngFor="let episode of episodes" [episode]="episode"></app-episode> -->
+
+<!-- <div class="item" *ngFor="let episode of episodes">
+    <h1>{{ episode.name }}</h1>
+</div> -->
+
+<div class="nav">
+  <div class="season">
+    <div class="title">
+      <h1>Season 1</h1>
+    </div>
+    <div class="episodes">
+      <a *ngFor="let episode of season1" [routerLink]="['/episodes', episode.id]" >{{ episode.name }}</a>
+    </div>
+  </div>
+  <div class="season">
+    <div class="title">
+      <h1>Season 2</h1>
+    </div>
+    <div class="episodes">
+      <a *ngFor="let episode of season2" [routerLink]="['/episodes', episode.id]" >{{ episode.name }}</a>
+    </div>
+  </div>
+  <div class="season">
+    <div class="title">
+      <h1>Season 3</h1>
+    </div>
+    <div class="episodes">
+      <a>Soon</a>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

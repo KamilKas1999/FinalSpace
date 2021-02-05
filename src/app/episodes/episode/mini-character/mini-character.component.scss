@@ -1,0 +1,28 @@
+.image{
+    text-align: center;
+    float:left;
+    width: 33%;
+    height: 300px;
+    margin-bottom: 100px;
+}
+img{
+    border-radius: 100%;
+    border: 4px solid black;
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    color:white
+}
+
+@media only screen and (max-width: 1200px) {
+    .image {
+        width:50%;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .image {
+        width:100%;
+    }
+  }  

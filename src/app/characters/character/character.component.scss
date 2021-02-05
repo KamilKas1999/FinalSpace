@@ -1,0 +1,66 @@
+.all {
+  background-color: #424242;
+  border: 4px black solid;
+  padding: 20px;
+  .img {
+    text-align: center;
+    img {
+      margin: 10px;
+      border: 4px black solid;
+      border-radius: 100%;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+    }
+  }
+
+  .info,
+  .alias,
+  .abilities {
+    text-align: left;
+    color: white;
+    padding-left: 20px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+.info,
+.alias,
+.img {
+  border-right: 4px black solid;
+}
+
+
+//animation
+.imgInside {
+  transition: 0.5s ease;
+}
+
+.imgInside:hover{
+  transform: scale(1.15);
+
+}
+
+
+
+//screen size
+@media only screen and (max-width: 1200px) {
+  .img {
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .info,
+  .alias,
+  .img {
+    border-right: none;
+  }
+}
