@@ -9,9 +9,10 @@ import { LocationsComponent } from '../locations/locations.component';
 import { QuotesComponent } from '../quotes/quotes.component';
 import { episode } from '../episodes/episode.model';
 import { EpisodeComponent } from '../episodes/episode/episode.component';
+import { HomeComponent } from '../home/home.component';
 
 const appRoutes: Routes = [
-  {path : '', redirectTo : 'characters'},
+  {path : '', component:HomeComponent},
   {
     path: 'characters',
     component: CharactersComponent,

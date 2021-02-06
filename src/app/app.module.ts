@@ -13,6 +13,7 @@ import { LocationsComponent } from './locations/locations.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { EpisodeComponent } from './episodes/episode/episode.component';
 import { MiniCharacterComponent } from './episodes/episode/mini-character/mini-character.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { MiniCharacterComponent } from './episodes/episode/mini-character/mini-c
     QuotesComponent,
     EpisodeComponent,
     MiniCharacterComponent,
+    HomeComponent,
   ],
   imports: [
     HttpClientModule,
