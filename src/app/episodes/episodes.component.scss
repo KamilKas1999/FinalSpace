@@ -1,6 +1,6 @@
 .nav {
   background-color: #424242;
-  //overflow: hidden;
+  overflow: hidden;
   a {
     float: left;
     font-size: 16px;
@@ -9,26 +9,30 @@
     padding: 14px 16px;
     text-decoration: none;
   }
-  .season {
-    float: left;
-    //overflow: hidden;
-    .title {
-      font-size: 16px;
-      border: none;
-      outline: none;
-      color: white;
-      padding: 14px 16px;
-      background-color: inherit;
-      font-family: inherit;
-      margin: 0;
-    }
+}
+.season {
+  float: left;
+  width: 33.333%;
+  text-align: center;
+  display: inline;
+  .title {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
   }
 }
-
+.season:not(:last-child) {
+  border-right: 2px solid black;
+}
 .episodes {
   display: none;
   position: absolute;
-  background-color: rgb(119, 88, 139);
+  background-color: rgb(67, 42, 83);
   left: 0;
   width: 100%;
   z-index: 1;
@@ -51,4 +55,15 @@
 
 .season:hover .episodes {
   display: block;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .season {
+    float: none;
+    width: 100%;
+  }
+  .season:not(:last-child){
+    border-bottom: 2px solid black;
+  }
 }

@@ -1,17 +1,16 @@
-#mySidenav a {
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.click {
   position: absolute;
   left: -110px;
   transition: 0.3s;
   padding: 15px;
   width: 120px;
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
   border-radius: 0 5px 5px 0;
-}
-
-#mySidenav a:hover {
-  left: 0;
 }
 
 #characters {
@@ -19,9 +18,17 @@
   background-color: #74435f;
 }
 
+#characters:hover {
+  left: 0;
+}
+
 #episodes {
   top: 80px;
   background-color: #683030;
+}
+
+#episodes:hover {
+  left: 0;
 }
 
 #locations {
@@ -29,13 +36,21 @@
   background-color: #3c6230;
 }
 
+#locations:hover {
+  left: 0;
+}
+
 #quotes {
   top: 200px;
   background-color: rgb(48, 76, 87);
 }
 
+#quotes:hover {
+  left: 0;
+}
+
 @media only screen and (max-width: 1200px) {
-  #mySidenav a {
+  a {
     position: static;
     left: 0;
     padding: 15px;
@@ -44,5 +59,19 @@
     font-size: 20px;
     color: white;
     border-radius: 0;
+    max-width: 25%;
+  }
+
+  .click {
+    position: static;
+    border-radius: 0;
+    width: 25%;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .click {
+    width: 50%;
   }
 }

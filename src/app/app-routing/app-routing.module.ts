@@ -11,6 +11,7 @@ import { episode } from '../episodes/episode.model';
 import { EpisodeComponent } from '../episodes/episode/episode.component';
 
 const appRoutes: Routes = [
+  {path : '', redirectTo : 'characters'},
   {
     path: 'characters',
     component: CharactersComponent,

@@ -24,13 +24,18 @@ img {
   height: auto;
 }
 
+.image{
+  width: 100%;
+  text-align: center;
+}
+
+.info{
+  text-align: left;
+  padding-left: 40px;
+}
+
 .characters {
   text-align: center;
 }
 
-@media only screen and (max-width: 800px) {
-  img{
-      // height: 90%;
-      // width: 90%;
-  }
-}  
+
