@@ -1,0 +1,16 @@
+.smallScreen{
+display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .smallScreen{
+        display: block;
+        }
+
+     .bigScreen{
+         display: none;
+     }   
+
+
+
+}

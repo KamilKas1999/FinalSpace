@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { APICharactersService } from './characters/apiCharacter.service';
 import { EpisodesService } from './episodes/episodes.service';
 
+
 interface data {
   name: string;
 }

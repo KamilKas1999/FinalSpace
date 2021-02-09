@@ -1,8 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
+import { Subject } from 'rxjs';
 import { character } from '../characters/character/character.model';
-import { CharactersComponent } from '../characters/characters.component';
 import { episode } from './episode.model';
 
 @Injectable({
@@ -44,6 +43,7 @@ export class EpisodesService {
           this.charactersChanged.next(characters);
         });
       }
+
     }
   }
 }

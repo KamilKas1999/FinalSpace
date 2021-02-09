@@ -1,14 +1,14 @@
 <div id="mySidenav" class="sidenav">
-  <div id="characters" class="click">
+  <div id="characters" class="click" [@hov]="state">
     <a routerLink="characters">Character</a>
   </div>
-  <div id="episodes" class="click">
+  <div id="episodes" class="click" [@hov]="state">
     <a routerLink="episodes">Episodes</a>
   </div>
-  <div id="locations" class="click">
+  <div id="locations" class="click" [@hov]="state">
     <a routerLink="locations"> Locations</a>
   </div>
-  <div id="quotes" class="click">
+  <div id="quotes" class="click" [@hov]="state">
     <a routerLink="quotes">Quotes</a>
   </div>
 </div>

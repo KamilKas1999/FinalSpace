@@ -9,7 +9,6 @@
         <p>Director: {{ episode.director }}</p>
         <p>Writer: {{ episode.writer }}</p>
         <p>Air Date: {{ episode.air_date }}</p>
-        <div class="characters"></div>
       </div>
     </div>
     <div class="row">
@@ -20,11 +19,18 @@
       </div>
     </div>
     <div class="row">
-      <div class="character-list">
+      <div class="character-list" *ngIf="!isLoading">
         <app-mini-character
           *ngFor="let character of characters"
           [character]="character"
         ></app-mini-character>
+      </div>
+      <div id="loading"
+        class="div"
+        *ngIf="isLoading"
+        
+      >
+        <app-loading></app-loading>
       </div>
     </div>
   </div>

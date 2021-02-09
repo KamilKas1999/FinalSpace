@@ -14,7 +14,8 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { EpisodeComponent } from './episodes/episode/episode.component';
 import { MiniCharacterComponent } from './episodes/episode/mini-character/mini-character.component';
 import { HomeComponent } from './home/home.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoadingComponent } from './shared/loading/loading.component'
 
 @NgModule({
   declarations: [
@@ -28,13 +29,15 @@ import { HomeComponent } from './home/home.component';
     EpisodeComponent,
     MiniCharacterComponent,
     HomeComponent,
+    LoadingComponent,
   ],
   imports: [
     HttpClientModule,
     BrowserModule,
     NgbModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,7 +5,7 @@ a {
 }
 
 .click {
-  position: absolute;
+  position: fixed;
   left: -110px;
   transition: 0.3s;
   padding: 15px;
@@ -20,6 +20,7 @@ a {
 
 #characters:hover {
   left: 0;
+  background-color: #94637f;
 }
 
 #episodes {
@@ -29,6 +30,7 @@ a {
 
 #episodes:hover {
   left: 0;
+  background-color: #885050;
 }
 
 #locations {
@@ -38,6 +40,7 @@ a {
 
 #locations:hover {
   left: 0;
+  background-color:  #5c8250;
 }
 
 #quotes {
@@ -47,14 +50,19 @@ a {
 
 #quotes:hover {
   left: 0;
+  background-color: rgb(68, 96, 107);
 }
 
 @media only screen and (max-width: 1200px) {
+  .sidenav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
   a {
-    position: static;
     left: 0;
     padding: 15px;
-
     text-decoration: none;
     font-size: 20px;
     color: white;
@@ -63,7 +71,11 @@ a {
   }
 
   .click {
+    overflow: hidden;
     position: static;
+    text-align: center;
+    left: 0;
+    top: 0;
     border-radius: 0;
     width: 25%;
     float: left;
