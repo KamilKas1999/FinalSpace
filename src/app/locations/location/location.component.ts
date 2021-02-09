@@ -14,6 +14,7 @@ export class LocationComponent implements OnInit, OnDestroy {
   id: number;
   location: location;
   residents: character[];
+  isLoading = false;
   private paramsSub: Subscription;
   private APIsub: Subscription;
   private residentsSub: Subscription;
@@ -24,12 +25,14 @@ export class LocationComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.paramsSub = this.route.params.subscribe((params: Params) => {
+      this.startLoading();
       this.residents = [];
       this.id = +params['id'];
       this.location = this.APIlocations.getLocation(this.id - 1);
       this.APIlocations.getListOfCharacters(this.id - 1);
     });
     this.APIsub = this.APIlocations.locationsChanged.subscribe(() => {
+      this.startLoading();
       this.residents = [];
       this.location = this.APIlocations.getLocation(this.id - 1);
       this.APIlocations.getListOfCharacters(this.id - 1);
@@ -37,7 +40,6 @@ export class LocationComponent implements OnInit, OnDestroy {
     this.residentsSub = this.APIlocations.charactersChanged.subscribe(
       (residents) => {
         this.residents = residents;
-        console.log(this.residents);
       }
     );
   }
@@ -45,5 +47,12 @@ export class LocationComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.paramsSub.unsubscribe();
     this.APIsub.unsubscribe();
+  }
+
+  startLoading() {
+    this.isLoading = true;
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 200);
   }
 }

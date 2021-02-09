@@ -1,12 +1,20 @@
 <div class="all" *ngIf="location">
   <div id="main">
-    <h1 >{{ location.name }}</h1>
+    <h1>{{ location.name }}</h1>
     <img src="{{ location.img_url }}" />
   </div>
   <div id="info"></div>
-  <p>Type : {{location.type}}</p>
-  <h6>Inhabitants:</h6>
-  <p *ngFor="let species of location.inhabitants">{{species}}</p>
-  <h6>Residents:</h6>
-  <app-resident *ngFor = "let resident of residents"[resident] ="resident"></app-resident>
+  <p>Type : {{ location.type }}</p>
+  <h6 *ngIf="location.inhabitants.length > 0">Inhabitants:</h6>
+  <p *ngFor="let species of location.inhabitants">{{ species }}</p>
+  <div *ngIf = "!isLoading"> 
+    <h6 *ngIf="location.notable_residents.length > 0">Residents:</h6>
+    <app-resident
+      *ngFor="let resident of residents"
+      [resident]="resident"
+    ></app-resident>
+  </div>
+  <div *ngIf="isLoading" id="loading">
+    <app-loading></app-loading>
+  </div>
 </div>

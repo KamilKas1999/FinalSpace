@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-4">
+    <div class="col-md-12 col-lg-4">
       <div
         class="tab"
         *ngFor="let location of locations"
@@ -9,7 +9,7 @@
         <h4>{{ location.name }}</h4>
       </div>
     </div>
-    <div class="col-8">
+    <div class="col-md-12 col-lg-8">
       <router-outlet></router-outlet>
     </div>
   </div>

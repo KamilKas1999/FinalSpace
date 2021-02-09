@@ -1,16 +1,16 @@
-.col-4, .col-8{
+.col-lg-4, .col-lg-8{
     padding-left: 0;
     padding-right: 0;
 }
 
-.col-4{
-    border-right: 2px solid black;
-    min-height: 1000px;
+.col-lg-4{
+    border-right: 4px solid black;
+    height: 800px;
 }
 
 .container{
     background-color: #424242;
-    min-height: 1000px;
+    min-height: 700px;
 }
 
 .tab{
@@ -26,3 +26,11 @@
     color:black;
     background-color: #626262;
 }
+
+@media only screen and (max-width: 992px) {
+    .col-lg-4{
+        border-right: none;
+        border-bottom: 4px solid black ;
+        height: auto;
+    }
+  }

@@ -4,9 +4,28 @@
     color: white;
 }
 
-#main{
-    img{
-        border: 4px solid black;
-    }
+#main{ 
 text-align: center;
+}
+
+img{
+    border: 4px solid black;
+    margin-bottom: 10px;
+}
+
+
+
+p{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+h6{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+#loading{
+    width: 100%;
+    text-align: center;
 }
