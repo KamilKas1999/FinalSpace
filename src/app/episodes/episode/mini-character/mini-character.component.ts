@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { character } from 'src/app/characters/character/character.model';
+import { character } from 'src/app/shared/models/character.model';
 
 @Component({
   selector: 'app-mini-character',

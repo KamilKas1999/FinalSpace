@@ -1,4 +1,4 @@
-import { character } from "../characters/character/character.model";
+import { character } from "./character.model";
 
 export class episode{
     id:number;

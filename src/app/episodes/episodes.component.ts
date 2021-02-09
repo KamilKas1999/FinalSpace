@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { episode } from './episode.model';
+import { episode } from '../shared/models/episode.model';
 import { EpisodesService } from './episodes.service';
 
 @Component({

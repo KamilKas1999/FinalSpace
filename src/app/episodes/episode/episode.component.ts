@@ -1,8 +1,8 @@
 import { Component, Input, OnDestroy, OnInit, Output } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { character } from 'src/app/characters/character/character.model';
-import { episode } from '../episode.model';
+import { character } from 'src/app/shared/models/character.model';
+import { episode } from '../../shared/models/episode.model';
 import { EpisodesService } from '../episodes.service';
 
 @Component({

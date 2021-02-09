@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './navbar/navbar.component';
-import { AppRoutingModule } from './app-routing/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { CharactersComponent } from './characters/characters.component';
 import { CharacterComponent } from './characters/character/character.component';
 import { EpisodesComponent } from './episodes/episodes.component';
@@ -15,7 +15,9 @@ import { EpisodeComponent } from './episodes/episode/episode.component';
 import { MiniCharacterComponent } from './episodes/episode/mini-character/mini-character.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LoadingComponent } from './shared/loading/loading.component'
+import { LoadingComponent } from './shared/loading/loading.component';
+import { LocationComponent } from './locations/location/location.component';
+import { ResidentComponent } from './locations/location/resident/resident.component'
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { LoadingComponent } from './shared/loading/loading.component'
     MiniCharacterComponent,
     HomeComponent,
     LoadingComponent,
+    LocationComponent,
+    ResidentComponent,
   ],
   imports: [
     HttpClientModule,

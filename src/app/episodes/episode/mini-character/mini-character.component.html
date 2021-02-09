@@ -1,4 +1,4 @@
-<div class="image">
-  <img src="{{ character.img_url }}" />
+<div class="all">
+  <img src="{{ character.img_url }}" [routerLink]="['/characters', character.id]" />
   <h1>{{ character.name }}</h1>
 </div>

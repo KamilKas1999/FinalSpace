@@ -39,11 +39,11 @@
 
 
 //animation
-.imgInside {
+img {
   transition: 0.5s ease;
 }
 
-.imgInside:hover{
+img:hover{
   transform: scale(1.15);
 
 }

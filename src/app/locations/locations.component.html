@@ -1,1 +1,16 @@
-<p>locations works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <div
+        class="tab"
+        *ngFor="let location of locations"
+        (mouseover)="navigate(location.id)"
+      >
+        <h4>{{ location.name }}</h4>
+      </div>
+    </div>
+    <div class="col-8">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

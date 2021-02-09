@@ -1,0 +1,28 @@
+.col-4, .col-8{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.col-4{
+    border-right: 2px solid black;
+    min-height: 1000px;
+}
+
+.container{
+    background-color: #424242;
+    min-height: 1000px;
+}
+
+.tab{
+    width: 100%;
+    background-color: #424242;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color : white;
+    text-align: center;
+}
+
+.tab:hover{
+    color:black;
+    background-color: #626262;
+}
