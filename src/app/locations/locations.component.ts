@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { location } from '../shared/models/location.model';
-import { LocationsService } from './locations.service';
+import { LocationsService } from '../shared/services/locations.service';
+
 
 @Component({
   selector: 'app-locations',

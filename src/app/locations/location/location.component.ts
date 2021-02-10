@@ -3,7 +3,8 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { character } from 'src/app/shared/models/character.model';
 import { location } from 'src/app/shared/models/location.model';
-import { LocationsService } from '../locations.service';
+import { LocationsService } from 'src/app/shared/services/locations.service';
+
 
 @Component({
   selector: 'app-location',

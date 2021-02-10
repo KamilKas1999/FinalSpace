@@ -1,1 +1,3 @@
-<p>quotes works!</p>
+<div class="quotes" *ngFor="let quote of quotes; let i = index" > 
+  <app-quote [quote] = 'quote' [index] = "i"></app-quote>
+</div>

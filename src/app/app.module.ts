@@ -17,7 +17,8 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoadingComponent } from './shared/loading/loading.component';
 import { LocationComponent } from './locations/location/location.component';
-import { ResidentComponent } from './locations/location/resident/resident.component'
+import { ResidentComponent } from './locations/location/resident/resident.component';
+import { QuoteComponent } from './quotes/quote/quote.component'
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { ResidentComponent } from './locations/location/resident/resident.compon
     LoadingComponent,
     LocationComponent,
     ResidentComponent,
+    QuoteComponent,
   ],
   imports: [
     HttpClientModule,

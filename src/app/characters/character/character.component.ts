@@ -1,7 +1,8 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { APICharactersService } from '../apiCharacter.service';
+import { APICharactersService } from 'src/app/shared/services/apiCharacter.service';
+
 import { character } from '../../shared/models/character.model';
 
 @Component({

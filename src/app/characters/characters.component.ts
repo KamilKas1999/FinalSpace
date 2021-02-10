@@ -1,7 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { APICharactersService } from './apiCharacter.service';
+
 import { character } from '../shared/models/character.model';
+import { APICharactersService } from '../shared/services/apiCharacter.service';
 
 @Component({
   selector: 'app-characters',

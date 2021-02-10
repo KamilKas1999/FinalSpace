@@ -2,8 +2,9 @@ import { Component, Input, OnDestroy, OnInit, Output } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { character } from 'src/app/shared/models/character.model';
+import { EpisodesService } from 'src/app/shared/services/episodes.service';
 import { episode } from '../../shared/models/episode.model';
-import { EpisodesService } from '../episodes.service';
+
 
 @Component({
   selector: 'app-episode',

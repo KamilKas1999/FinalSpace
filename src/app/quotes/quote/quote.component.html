@@ -1,0 +1,14 @@
+<div class="row" *ngIf="quote">
+  <div class="col-md-12 col-lg-3" id="image">
+    <img
+      src="{{ quote.image }}"
+      [routerLink]="['/', 'characters', characterID]"
+    />
+    <h5>{{ quote.by }}</h5>
+  </div>
+  <div class="col-md-12 col-lg-9" id="text">
+    <div>
+      <h4>{{ quote.quote }}</h4>
+    </div>
+  </div>
+</div>
